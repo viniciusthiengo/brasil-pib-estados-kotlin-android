@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Item de definição de background de shape.
+    -->
+    <item>
+
+        <!--
+            Definindo cor de background; curvatura de pontas;
+            e largura e cor de borda.
+        -->
+        <shape android:shape="rectangle">
+
+            <solid android:color="@android:color/white" />
+
+            <corners android:radius="3dp" />
+
+            <stroke
+                android:width="0.8dp"
+                android:color="@color/colorSpinnerStroke" />
+        </shape>
+    </item>
+
+    <!--
+        Item de definição de imagem de background, posicionada
+        a 0.5dp à direita da View.
+    -->
+    <item android:right="10dp">
+        <!--
+            Definindo a imagem e o posicionamento dentro da View.
+        -->
+        <bitmap
+            android:gravity="center_vertical|right"
+            android:tint="@color/colorSpinnerStroke"
+            android:src="@drawable/ic_keyboard_arrow_down_white_18dp" />
+    </item>
+</layer-list>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9E9E9E</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#FFC107</color>
+
+    <color name="colorContentBackground">#F0F0F0</color>
+
+    <color name="colorSpinnerStroke">#BBBBBB</color>
+    <color name="colorContentText">#666666</color>
+
+    <color name="colorLine">#CCCCCC</color>
+
+    <color name="colorBlockPopulation">#EAEAEA</color>
+    <color name="colorBlockArea">#E3E3E3</color>
+    <color name="colorBlockIdh">#DCDCDC</color>
+    <color name="colorBlockPerCapitaIncome">#D4D4D4</color>
+    <color name="colorBlockIlliteracy">#CACACA</color>
+    <color name="colorBlockLifeExpectancy">#BDBDBD</color>
+</resources>

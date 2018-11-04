@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+/*
+ * Plugin que permite o trabalho com anotações e
+ * com a biblioteca Data Binding no Kotlin.
+ * */
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "thiengo.com.br.brasil_pibestados"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /*
+     * Liberando o trabalho com Data Binding
+     * */
+    dataBinding{
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    /*
+     * Plain-Pie API.
+     * */
+    implementation 'com.github.zurche:plain-pie:v0.2.9'
+
+    /*
+     * Inclusão do pacote da Data Binding library.
+     * */
+    kapt 'com.android.databinding:compiler:3.1.4'
+}

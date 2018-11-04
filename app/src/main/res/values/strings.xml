@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Brasil - PIB Estados</string>
+    <string name="label_pib">PIB:</string>
+    <string name="label_population">População</string>
+    <string name="label_area">Área (em km²)</string>
+    <string name="label_idh">Índice de Desenvolvimento Humano (IDH)</string>
+    <string name="label_per_capita_income">Renda per capita</string>
+    <string name="label_illiteracy">Analfabetismo</string>
+    <string name="label_life_expectancy">Expectativa de vida ao nascer (anos)</string>
+</resources>
