@@ -4,13 +4,16 @@
         Estilo padrão, aplicado em todo o projeto.
     -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/background</item>
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <!--
-        Configurações para Spinners com fundo branco.
+        Configurações para Spinner com fundo branco e
+        texto escuro.
     -->
     <style name="AppTheme.SpinnerTheme" parent="AppTheme">
         <item name="android:textViewStyle">@style/AppTheme.TextViewStyle</item>
