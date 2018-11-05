@@ -3,9 +3,7 @@ package thiengo.com.br.brasil_pibestados.view
 import android.content.Context
 import android.databinding.BindingMethod
 import android.databinding.BindingMethods
-import android.databinding.adapters.AdapterViewBindingAdapter
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Spinner
@@ -38,7 +36,6 @@ class SpinnerWithListener: Spinner {
     fun setSpinnerItemSelected(
             activity: PIBActivity
         ){
-        Log.i("LOG-r", "setSpinnerItemSelected")
 
         val listener = object: AdapterView.OnItemSelectedListener{
 
